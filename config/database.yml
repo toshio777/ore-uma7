@@ -26,4 +26,7 @@ test:
 
 production:
   <<: *default
-  database: hitosama-test_test
+  database: ore_uma7_production
+  username: postgres
+  password: <%= Rails.application.credentials.db[:password] %>
+  host: <%= Rails.application.credentials.db[:hostname] %>
