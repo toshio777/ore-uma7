@@ -6,14 +6,14 @@ module Api
 
       def index
         horses = Horse.order(power: :asc)
-        render json: { data: "TestData" }
+        render json: { data: horse }
       end
 
 
       
       def show
-       # @horse = Horse.order("RANDOM()").limit(8)
-        render json: { test: 'Success', message: 'Test'} 
+        @horse = Horse.order("RANDOM()").limit(8)
+        render json: {data: horse} 
       end
 
 
