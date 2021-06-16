@@ -28,6 +28,7 @@ test:
 production:
   #<<: *default
   database: ore_uma7_production
-  username: postgres
+  username: <%= Rails.application.credentials.db[:username] %>
   password: <%= Rails.application.credentials.db[:password] %>
-  host: <%= Rails.application.credentials.db[:hostname] %>
+  host: <%= Rails.application.credentials.db[:host] %>
+  port: 5432
