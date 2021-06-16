@@ -13,7 +13,7 @@ module Api
       
       def show
         @horse = Horse.order("RANDOM()").limit(8)
-        render json: { data: @horse } 
+        render json: { data: "TestData"} 
       end
 
 
