@@ -6,7 +6,7 @@ module Api
 
       def index
         horses = Horse.order(power: :asc)
-        render json: { data: horses }
+        render json: { data: "TestData" }
       end
 
 
