@@ -40,7 +40,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "pg"
 
-group :production do
+group :development do
   # 略
   # ***** 以下を追加 *****
   gem "capistrano", "~> 3.10", require: false
